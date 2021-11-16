@@ -2,13 +2,15 @@
 
 ## Instalation
 ### SPM
-TBD
+```swift
+.package(url: "https://github.com/propellerhr/ios-http-client", .upToNextMajor(from: "1.0.0"))
+```
 
 
 
 ## Usage
 
-#### 1. Create a HttpClientConfiguration 
+#### 1. Create a HttpClientConfiguration
 ```swift
 extension HttpClientConfiguration {
     static var myAppDev: HttpClientConfiguration {
@@ -24,7 +26,7 @@ Initialize the HttpClient before using it by executing:
 HttpClient.initialize(configuration: .myAppDev)
 ```
 
-#### 3. Create a Request 
+#### 3. Create a Request
 ```swift
 class ToDoRequest: HttpRequestInterface {
     typealias Body = EmptyHttpRequestBody
